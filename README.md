@@ -48,16 +48,16 @@ Penyelasaian:
  * Pembuatan berkas log system ini dibuat dengan menggunakan fungsi `makelog` yang nantinya akan dipanggil oleh fungsi-fungsi FUSE.
  * Fungsi makelog() adalah fungsi yang menuliskan log dengan format `[LEVEL]::[yy][mm][dd]-[HH]:[MM]:[SS]::[CMD]::[DESC]` di `/home/gerry/SinSeiFS.log`
  
-       static struct fuse_operations xmp_oper = {
-          .getattr = xmp_getattr,
-          .readdir = xmp_readdir,
-          .read = xmp_read,
-          .mkdir = xmp_mkdir,
-          .rmdir = xmp_rmdir,
-          .rename = xmp_rename,
-          .create = xmp_create,
-          .unlink = xmp_unlink,
-      };
+         static struct fuse_operations xmp_oper = {
+            .getattr = xmp_getattr,
+            .readdir = xmp_readdir,
+            .read = xmp_read,
+            .mkdir = xmp_mkdir,
+            .rmdir = xmp_rmdir,
+            .rename = xmp_rename,
+            .create = xmp_create,
+            .unlink = xmp_unlink,
+        };
       
 * Di atas merupakan fungsi-fungsi yang digunakan pada FUSE.
 * Log level WARNING, merupakan pencatatan log untuk syscall `rmdir` dan `unlink`. Sisanya, akan dicatat dengan level INFO.
