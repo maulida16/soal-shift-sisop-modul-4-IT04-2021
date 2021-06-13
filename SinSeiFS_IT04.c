@@ -10,7 +10,7 @@
 #include <stdlib.h>
 
 static const char *dirpath = "/home/gerry/Downloads/";
-static const char *logpath = "/home/gerry/Documents/SinSeiFS.log";
+static const char *logpath = "/home/gerry/SinSeiFS.log";
 char log1[1200], *desc;
 
 void atbash(char *name) {
